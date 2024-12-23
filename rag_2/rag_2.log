@@ -1,0 +1,8 @@
+2024-12-23 12:18:03,070 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2024-12-23 12:18:06,891 - sentence_transformers.SentenceTransformer - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2024-12-23 12:18:07,289 - root - INFO - Documents loaded
+2024-12-23 12:18:19,256 - root - INFO - stored embedding into local memory
+2024-12-23 12:18:19,257 - root - INFO - starting the query engine
+2024-12-23 12:18:19,257 - root - INFO - Query: What is an attention mechanism?
+2024-12-23 12:18:22,479 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-23 12:18:22,480 - root - INFO - An attention mechanism allows different parts of the input to be selectively weighted based on their relevance. This process enables the model to focus on certain elements while ignoring others when generating output sequences.
