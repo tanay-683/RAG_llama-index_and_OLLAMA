@@ -1,28 +1,16 @@
 # Rag pipline using LLAMA-INDEX and OLLAMA
 
-I have used `uv` python package manager in this project. so make sure you have `uv` installed in your system. If not, you can install it by running the following command in your terminal.
-
+steps to run this project in your local environment:
+1. clone the repo
+2. build the docker file
 ```bash
-pip install uv
+docker build -t <image_name> .
 ```
 
-this project have a notebook named `main.ipynb` whcih include the code for the pipeline in a notebook fashion.
-
-## Requirements
-all the requirements are listed in `pyproject.toml` file. you can install all the requirements by running the following command in your terminal.
-
-```bash
-uv pip install -r pyproject.toml
+3. run the built docker image
+```bash 
+docker run -it --rm <image_name>
 ```
 
-to install your own package{`setup.py`}, you can run the following command seperately in your terminal.
-
-```bash
-uv pip install -e .
-```
-
-# Running the pipeline
-run the `main.py` file and for the reference you can see the log file(`rag_2/rag_2.log`) for the logs.
-
-
-# RAG_llama-index_and_OLLAMA
+### Disclaimer
+in `main.py` file, the query is hardcoded, so every time you run the docker image, it will run the same query.
